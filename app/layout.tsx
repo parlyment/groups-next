@@ -14,10 +14,6 @@ export default function RootLayout(props: React.PropsWithChildren) {
           <section className={styles.container}>
             <Nav />
 
-            <header className={styles.header}>
-              <img src="/logo.svg" className={styles.logo} alt="logo" />
-            </header>
-
             <main className={styles.main}>{props.children}</main>
 
             <footer className={styles.footer}>
