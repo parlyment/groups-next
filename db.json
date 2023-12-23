@@ -1,0 +1,4 @@
+{
+  "roles": [{ "id": 1, "name": "Pizza editor" }],
+  "groups": [{ "id": 1, "name": "Admins" }]
+}
