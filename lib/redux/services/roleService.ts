@@ -10,7 +10,7 @@ export const roleAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001' }),
   tagTypes: ['Role'],
   endpoints: (build) => ({
-    fetchAllRoles: build.query<Role[], any>({
+    fetchAllRoles: build.query<Role[], void>({
       query: () => ({
         url: `/roles`,
       }),

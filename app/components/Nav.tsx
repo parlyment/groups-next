@@ -26,6 +26,22 @@ export const Nav = () => {
       >
         Verify
       </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === '/roles' ? styles.active : ''
+        }`}
+        href="/roles"
+      >
+        Roles
+      </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === '/groups' ? styles.active : ''
+        }`}
+        href="/groups"
+      >
+        Groups
+      </Link>
     </nav>
   )
 }

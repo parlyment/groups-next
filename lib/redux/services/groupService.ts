@@ -10,7 +10,7 @@ export const groupAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001' }),
   tagTypes: ['Group'],
   endpoints: (build) => ({
-    fetchAllGroups: build.query<Group[], any>({
+    fetchAllGroups: build.query<Group[], void>({
       query: () => ({
         url: `/groups`,
       }),
