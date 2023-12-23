@@ -1,5 +1,6 @@
 /* Core */
 import { createLogger } from 'redux-logger'
+import { groupAPI, roleAPI } from './services'
 
 const middleware = [
   createLogger({
@@ -15,6 +16,8 @@ const middleware = [
     },
     predicate: () => typeof window !== 'undefined',
   }),
+  roleAPI.middleware,
+  groupAPI.middleware,
 ]
 
 export { middleware }
