@@ -1,4 +1,22 @@
 {
-  "roles": [{ "id": 1, "name": "Pizza editor" }],
-  "groups": [{ "id": 1, "name": "Admins" }]
+  "roles": [
+    {
+      "id": 1,
+      "name": "Pizza editor"
+    },
+    {
+      "name": "Driver",
+      "id": 2
+    },
+    {
+      "name": "Someone cool",
+      "id": 3
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Admins"
+    }
+  ]
 }

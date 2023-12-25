@@ -1,14 +1,23 @@
-import { Role } from '@/lib/redux/services'
+import { Role, roleAPI } from '@/lib/redux/services'
 import React from 'react'
 
 import styles from './roleItem.module.scss'
 
 type RoleItemProps = {
-    role: Role
+  role: Role
 }
 
-export default function RoleItem ({role}: RoleItemProps) {
+export default function RoleItem({ role }: RoleItemProps) {
+  const [deleteRole] = roleAPI.useDeleteRoleMutation()
+
+  const handleDelete = async () => {
+    await deleteRole(role)
+  }
+
   return (
-    <div>{role.name}</div>
+    <div className={styles.container}>
+      <p>{role.name}</p>
+      <button onClick={handleDelete}>Delete</button>
+    </div>
   )
 }
