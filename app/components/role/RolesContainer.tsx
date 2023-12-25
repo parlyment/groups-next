@@ -6,14 +6,14 @@ import RoleItem from './RoleItem'
 
 import styles from './rolesContainer.module.scss'
 
-const RolesContainer = () => {
+export default function RolesContainer() {
   const { data: roles } = roleAPI.useFetchAllRolesQuery()
+
   return (
     <div className={styles.container}>
-      {roles ? roles.map((role) => <RoleItem key={role.id} role={role} />)
-      : 'No data'}
+      {roles
+        ? roles.map((role) => <RoleItem key={role.id} role={role} />)
+        : 'No data'}
     </div>
   )
 }
-
-export default RolesContainer
