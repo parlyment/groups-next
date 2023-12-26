@@ -10,7 +10,7 @@ export const selectedGroupSlice = createSlice({
   name: 'selectedGroup',
   initialState,
   reducers: {
-    update: (state, action: PayloadAction<Group>) => {
+    update: (state, action: PayloadAction<Group | undefined>) => {
       state.group = action.payload
     },
   },
