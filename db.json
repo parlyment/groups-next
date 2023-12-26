@@ -18,5 +18,17 @@
       "id": 1,
       "name": "Admins"
     }
+  ],
+  "roleToGroup": [
+    {
+      "role_id": 1,
+      "group_id": 1,
+      "id": 1
+    },
+    {
+      "role_id": 3,
+      "group_id": 1,
+      "id": 3
+    }
   ]
 }

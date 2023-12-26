@@ -1,12 +1,31 @@
 'use client'
 
-import { useSelector } from '@/lib/redux'
-import { roleAPI } from '@/lib/redux/services'
-import { selectSelectedGroup } from '@/lib/redux/slices/selectedGroupSlice'
+import { Group, roleAPI, roleToGroupAPI } from '@/lib/redux/services'
+import RoleToGroupItem from './RoleToGroupItem'
 
-export default function RolesToGroupContainer() {
-  const selectedGroup = useSelector(selectSelectedGroup)
+export type RolesToGroupContainerProps = {
+  selectedGroup: Group
+}
+
+export default function RolesToGroupContainer({
+  selectedGroup,
+}: RolesToGroupContainerProps) {
   const { data: allRoles } = roleAPI.useFetchAllRolesQuery()
+  const { data: rolesForGroup } = roleToGroupAPI.useFetchAllRolesToGroupQuery(
+    selectedGroup.id
+  )
 
-  return <div className='container'>Some cool text</div>
+  return (
+    <div className='container'>
+      {allRoles &&
+        allRoles.map((item) => (
+          <RoleToGroupItem
+            key={item.id}
+            group={selectedGroup}
+            role={item}
+            roleToGroup={rolesForGroup?.find((r) => r.role_id === item.id)}
+          />
+        ))}
+    </div>
+  )
 }
