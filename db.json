@@ -19,6 +19,10 @@
     {
       "name": "New role",
       "id": 5
+    },
+    {
+      "name": "One another role",
+      "id": 6
     }
   ],
   "groups": [

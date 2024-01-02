@@ -4,6 +4,7 @@ import { Group } from '../../services'
 export type SelectedGroupSliceState = {
   group?: Group
 }
+
 const initialState: SelectedGroupSliceState = {}
 
 export const selectedGroupSlice = createSlice({

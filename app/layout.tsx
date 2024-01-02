@@ -3,6 +3,7 @@ import { Providers } from '@/lib/providers'
 import { Nav } from './components/Nav'
 
 /* Instruments */
+import React from 'react'
 import styles from './styles/layout.module.css'
 import './styles/globals.css'
 

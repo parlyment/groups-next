@@ -1,7 +1,7 @@
 'use client'
 
+import React, { useState } from 'react'
 import { Role, roleAPI } from '@/lib/redux/services'
-import { useState } from 'react'
 
 export default function CreateRole() {
   const [name, setName] = useState('')

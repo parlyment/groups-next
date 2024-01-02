@@ -1,3 +1,4 @@
+import React from 'react'
 import { Group, groupAPI } from '@/lib/redux/services'
 
 import styles from './groupItem.module.scss'

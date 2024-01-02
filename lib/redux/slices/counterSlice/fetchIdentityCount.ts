@@ -6,7 +6,5 @@ export const fetchIdentityCount = async (
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ amount }),
   })
-  const result = await response.json()
-
-  return result
+  return await response.json()
 }

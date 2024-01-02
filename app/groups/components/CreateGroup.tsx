@@ -1,7 +1,7 @@
 'use client'
 
 import { Group, groupAPI } from '@/lib/redux/services'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function CreateGroup() {
   const [name, setName] = useState('')
