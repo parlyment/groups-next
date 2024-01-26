@@ -1,0 +1,9 @@
+.container {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=page.module.css.map */
