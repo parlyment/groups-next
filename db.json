@@ -1,28 +1,16 @@
 {
   "roles": [
     {
-      "id": 1,
-      "name": "Pizza editor"
-    },
-    {
-      "name": "Driver",
+      "name": "Lover",
       "id": 2
     },
     {
-      "name": "Someone cool",
+      "name": "Glower",
       "id": 3
     },
     {
-      "name": "Not cool person",
+      "name": "Flower",
       "id": 4
-    },
-    {
-      "name": "New role",
-      "id": 5
-    },
-    {
-      "name": "One another role",
-      "id": 6
     }
   ],
   "groups": [
