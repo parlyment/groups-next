@@ -1,5 +1,5 @@
 /* Instruments */
-import { groupAPI, roleAPI, roleToGroupAPI } from './services'
+import { groupAPI, roleAPI, roleToGroupAPI, snacksAPI } from './services'
 import { counterSlice } from './slices'
 import { selectedGroupSlice } from './slices/selectedGroupSlice'
 import { usersSlice } from '@/lib/redux/slices/usersSlice/usersSlice'
@@ -11,4 +11,5 @@ export const reducer = {
   [roleAPI.reducerPath]: roleAPI.reducer,
   [groupAPI.reducerPath]: groupAPI.reducer,
   [roleToGroupAPI.reducerPath]: roleToGroupAPI.reducer,
+  [snacksAPI.reducerPath]: snacksAPI.reducer,
 }

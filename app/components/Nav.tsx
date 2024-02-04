@@ -42,6 +42,14 @@ export const Nav = () => {
       >
         Groups
       </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === '/snacks' ? styles.active : ''
+        }`}
+        href="/snacks"
+      >
+        Snacks
+      </Link>
     </nav>
   )
 }
